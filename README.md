@@ -25,8 +25,8 @@ git push -u origin main
 
 `config/database.yml` の以下を変更してください。
 
-- `development.database` (`myapp_development`)
-- `test.database` (`myapp_test`)
+- `development.database` (`event_crawler_development`)
+- `test.database` (`event_crawler_test`)
 - `production.primary.database` (`my_api_template_production`)
 - `production.cache.database` (`my_api_template_production_cache`)
 - `production.queue.database` (`my_api_template_production_queue`)
