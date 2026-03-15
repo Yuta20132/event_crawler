@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+require "rubygems"
+require "bundler/setup"
+
+# Keep the outdated-version check in CI, but avoid network-dependent
+# failures for local development runs.
+ARGV.unshift("--ensure-latest") if ENV["CI"] && !ARGV.include?("--ensure-latest")
+
+load Gem.bin_path("brakeman", "brakeman")
